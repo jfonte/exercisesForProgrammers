@@ -1,0 +1,3 @@
+- [x] hello with input
+- [x] counting chars + challenges
+- [ ] printing quotes

@@ -1,0 +1,20 @@
+#!/usr/bin/python
+
+# if the user enters nothing, state that the user must enter something
+import time
+string = ''
+
+
+# this is prob a redundant func but whatever
+def checkEmpty(input):
+	return input.isspace()
+
+# print(checkEmpty(string))
+
+while string == '':
+	string = raw_input('what is your string? ')
+	if string.isspace() == True or string == '':
+		print('you must type something!')
+		time.sleep(1) # set delay to display error message
+		continue
+print(string +' has '+ str(len(string)) +' characters')
